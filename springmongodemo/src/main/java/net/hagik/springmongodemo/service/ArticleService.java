@@ -27,7 +27,7 @@ public class ArticleService {
         savedArticle.setCategory(article.getCategory());
         savedArticle.setContent(article.getContent());
 
-        articleRepository.save(article);
+        articleRepository.save(savedArticle);
     }
 
     public List<Article> getAllArticles() {
